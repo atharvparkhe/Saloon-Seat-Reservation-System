@@ -1,0 +1,878 @@
+{
+	"info": {
+		"_postman_id": "bdebb09c-21a1-41b2-bcc3-86242ea61b14",
+		"name": "SALOON",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16397653"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Account",
+					"item": [
+						{
+							"name": "Signup",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Atharva\",\n    \"email\":\"patharv777@gmail.com\",\n    \"password\":\"Pass@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/signup/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"signup",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"patharv777@gmail.com\",\n    \"password\":\"Pass@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/login/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"login",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Forget",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"patharv777@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/forgot/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"forgot",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Main",
+					"item": [
+						{
+							"name": "All Saloons",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/saloons/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"saloons",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Single Saloon",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/saloon/627010f1-3787-45e3-824e-0e5f67b6c9b8/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"saloon",
+										"627010f1-3787-45e3-824e-0e5f67b6c9b8",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "All Services",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/get-services/5875c07b-2543-461a-aee7-a2a2942c628c/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"get-services",
+										"5875c07b-2543-461a-aee7-a2a2942c628c",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Single Service",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/service/837d8478-39c8-4c8a-9c88-69d6f47b7406/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"service",
+										"837d8478-39c8-4c8a-9c88-69d6f47b7406",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Orders",
+					"item": [
+						{
+							"name": "View Orders",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ0NjgxODEzLCJpYXQiOjE2NDQ1MDkwMTMsImp0aSI6ImYyN2U2ZGQ0ZjZmYTRlMTBiMDY3NTNiNWQ2ZjVkNjhiIiwidXNlcl9pZCI6ImI3ZWIxN2MxLTRhZTctNDBmNi04M2UzLWI0YjIwZThkNzg1NiJ9.S4WAThm8ZvRb7teNdSwxjByVOFOn8HHqr_H1mVanS8w",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/past-bookings/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"past-bookings",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Make Booking",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ1MTcyNjY1LCJpYXQiOjE2NDQ5OTk4NjUsImp0aSI6IjNjZjkyMDEwMjBiMTQzODE4ZjM2ZDMzYTgyNzA1YmVlIiwidXNlcl9pZCI6IjhhZjAzZjE1LWQ2NDEtNDMxNi04NGIzLTZiMzI5YWU4ZDg1NSJ9.8WUKTXM1EFgD4q0ZrSM04p0IhKLGBV8KA5Rg0vPyTm8",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"service_id\" : \"f13e9bc2-5690-4086-8512-2382ff1421fa\",\n    \"date\" : \"2022-02-19\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/make-booking/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"make-booking",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Seller",
+			"item": [
+				{
+					"name": "Account",
+					"item": [
+						{
+							"name": "Signup",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Atharva\",\n    \"email\":\"seller5@gmail.com\",\n    \"phone\":\"8007609672\",\n    \"gst\":5,\n    \"password\":\"Pass@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/seller-signup/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"seller-signup",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"seller1@gmail.com\",\n    \"password\":\"Pass@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/seller-login/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"seller-login",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Forget",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"patharv777@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/seller-forgot/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"seller-forgot",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Main",
+					"item": [
+						{
+							"name": "Add Saloon",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQzMjEzODAyLCJpYXQiOjE2NDMwNDEwMDIsImp0aSI6IjI5ODYxNGFiMTk1ZDQyOWVhZmU4YjM3NWE3YTg1ZTZmIiwidXNlcl9pZCI6ImIyZjcyZDVmLTgzNDctNDlhZC1iYjM1LTNhM2VmZmEyOGM5YyJ9.dJWQf7Sa1fCoCp_ql9WCdDk7hHI1V0cZYs2B1bqUpfM",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Spicy Cuts",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "the best saloon",
+											"type": "text"
+										},
+										{
+											"key": "logo",
+											"type": "file",
+											"src": "/Users/atharvparkhe/Desktop/img.jpg"
+										},
+										{
+											"key": "address",
+											"value": "near miramar beach, panaji, goa",
+											"type": "text"
+										},
+										{
+											"key": "town",
+											"value": "panaji",
+											"type": "text"
+										},
+										{
+											"key": "state",
+											"value": "goa",
+											"type": "text"
+										},
+										{
+											"key": "pincode",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "latitude",
+											"value": "18.45",
+											"type": "text"
+										},
+										{
+											"key": "longitude",
+											"value": "16.83",
+											"type": "text"
+										},
+										{
+											"key": "start_timings",
+											"value": "9:00:00",
+											"type": "text"
+										},
+										{
+											"key": "end_timings",
+											"value": "18:00:00",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/saloons/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"saloons",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit Saloon Details",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQzMjEzODAyLCJpYXQiOjE2NDMwNDEwMDIsImp0aSI6IjI5ODYxNGFiMTk1ZDQyOWVhZmU4YjM3NWE3YTg1ZTZmIiwidXNlcl9pZCI6ImIyZjcyZDVmLTgzNDctNDlhZC1iYjM1LTNhM2VmZmEyOGM5YyJ9.dJWQf7Sa1fCoCp_ql9WCdDk7hHI1V0cZYs2B1bqUpfM",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"asdnbcsdhj\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/seller-saloon-update/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"seller-saloon-update",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Services",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ0NjAzMDEwLCJpYXQiOjE2NDQ0MzAyMTAsImp0aSI6IjZmZmFkNWY1NTkyZTQ3OGNiYTAzNzcwNzk3MjY4MjhjIiwidXNlcl9pZCI6IjhjZjk2YjIxLWIzYzItNGFlOS04NjdiLWVlZDMyOTcwM2Q5ZCJ9.E0jCkMj3BzM7nQqb4Zt-iZQI_WXGyx04BXwPfq4BOGM",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"service_name\" : \"service 1\",\n    \"service_cost\" : 120,\n    \"service_duration\" : \"01:00:00\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/services/bee781cf-aab4-4fa6-9e28-215ba2e373ca/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"services",
+										"bee781cf-aab4-4fa6-9e28-215ba2e373ca",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit Service",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQzMjEzODAyLCJpYXQiOjE2NDMwNDEwMDIsImp0aSI6IjI5ODYxNGFiMTk1ZDQyOWVhZmU4YjM3NWE3YTg1ZTZmIiwidXNlcl9pZCI6ImIyZjcyZDVmLTgzNDctNDlhZC1iYjM1LTNhM2VmZmEyOGM5YyJ9.dJWQf7Sa1fCoCp_ql9WCdDk7hHI1V0cZYs2B1bqUpfM",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"service_name\":\"asdnbcsdhj\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/seller-service-update/54d834b8-0c9b-4bb9-967f-191b57a336d8/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"seller-service-update",
+										"54d834b8-0c9b-4bb9-967f-191b57a336d8",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Service",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQzMjEzODAyLCJpYXQiOjE2NDMwNDEwMDIsImp0aSI6IjI5ODYxNGFiMTk1ZDQyOWVhZmU4YjM3NWE3YTg1ZTZmIiwidXNlcl9pZCI6ImIyZjcyZDVmLTgzNDctNDlhZC1iYjM1LTNhM2VmZmEyOGM5YyJ9.dJWQf7Sa1fCoCp_ql9WCdDk7hHI1V0cZYs2B1bqUpfM",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/seller-service-delete/54d834b8-0c9b-4bb9-967f-191b57a336d8/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"seller-service-delete",
+										"54d834b8-0c9b-4bb9-967f-191b57a336d8",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Seat",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQzMjEzODAyLCJpYXQiOjE2NDMwNDEwMDIsImp0aSI6IjI5ODYxNGFiMTk1ZDQyOWVhZmU4YjM3NWE3YTg1ZTZmIiwidXNlcl9pZCI6ImIyZjcyZDVmLTgzNDctNDlhZC1iYjM1LTNhM2VmZmEyOGM5YyJ9.dJWQf7Sa1fCoCp_ql9WCdDk7hHI1V0cZYs2B1bqUpfM",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"seat_name\": \"a2\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/seats/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"seats",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit Seat",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQzMjEzODAyLCJpYXQiOjE2NDMwNDEwMDIsImp0aSI6IjI5ODYxNGFiMTk1ZDQyOWVhZmU4YjM3NWE3YTg1ZTZmIiwidXNlcl9pZCI6ImIyZjcyZDVmLTgzNDctNDlhZC1iYjM1LTNhM2VmZmEyOGM5YyJ9.dJWQf7Sa1fCoCp_ql9WCdDk7hHI1V0cZYs2B1bqUpfM",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"seat_name\":\"asdnbcsdhj\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/seller-seat-update/a544257c-7dad-439b-b9fc-78f822c38fd3/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"seller-seat-update",
+										"a544257c-7dad-439b-b9fc-78f822c38fd3",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Seat",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQzMjEzODAyLCJpYXQiOjE2NDMwNDEwMDIsImp0aSI6IjI5ODYxNGFiMTk1ZDQyOWVhZmU4YjM3NWE3YTg1ZTZmIiwidXNlcl9pZCI6ImIyZjcyZDVmLTgzNDctNDlhZC1iYjM1LTNhM2VmZmEyOGM5YyJ9.dJWQf7Sa1fCoCp_ql9WCdDk7hHI1V0cZYs2B1bqUpfM",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/seller-seat-delete/a544257c-7dad-439b-b9fc-78f822c38fd3/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"seller-seat-delete",
+										"a544257c-7dad-439b-b9fc-78f822c38fd3",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Seats",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/seats/bee781cf-aab4-4fa6-9e28-215ba2e373ca/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"seats",
+										"bee781cf-aab4-4fa6-9e28-215ba2e373ca",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Orders",
+					"item": [
+						{
+							"name": "Seller Orders",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ0NjY4OTk3LCJpYXQiOjE2NDQ0OTYxOTcsImp0aSI6IjhjNzMxZGNlMmEyMTQxY2FiYWU1OTEzMDg5NGVhNmUzIiwidXNlcl9pZCI6IjhjZjk2YjIxLWIzYzItNGFlOS04NjdiLWVlZDMyOTcwM2Q5ZCJ9._YQZTF7SZCn0GW4-ipvh4zbP_uy9Sq7f9SWBXJVmSU8",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/seller-orders/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"seller-orders",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Seller Order Update",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ0NjY4OTk3LCJpYXQiOjE2NDQ0OTYxOTcsImp0aSI6IjhjNzMxZGNlMmEyMTQxY2FiYWU1OTEzMDg5NGVhNmUzIiwidXNlcl9pZCI6IjhjZjk2YjIxLWIzYzItNGFlOS04NjdiLWVlZDMyOTcwM2Q5ZCJ9._YQZTF7SZCn0GW4-ipvh4zbP_uy9Sq7f9SWBXJVmSU8",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"order_id\":\"24b0052e-770e-4247-a6df-fd50b3edbae5\",\n    \"is_completed\":true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/seller-update-orders/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"seller-update-orders",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

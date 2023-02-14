@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C823D99727B93EC1002A4CDC /* SaloonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C823D99627B93EC1002A4CDC /* SaloonModel.swift */; };
+		C823D99927B9415E002A4CDC /* SaloonWebservices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C823D99827B9415E002A4CDC /* SaloonWebservices.swift */; };
+		C823D99B27B94173002A4CDC /* SaloonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C823D99A27B94173002A4CDC /* SaloonViewModel.swift */; };
+		C823D99E27B9523B002A4CDC /* URLimage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C823D99D27B9523B002A4CDC /* URLimage.swift */; };
+		C823D9A027B953C7002A4CDC /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C823D99F27B953C7002A4CDC /* ImageLoader.swift */; };
+		C823D9A227B97D20002A4CDC /* SaloonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C823D9A127B97D20002A4CDC /* SaloonDetailView.swift */; };
+		C823D9A627BBC006002A4CDC /* BookingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C823D9A527BBC006002A4CDC /* BookingModel.swift */; };
+		C823D9A827BBC05C002A4CDC /* BookingWebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C823D9A727BBC05C002A4CDC /* BookingWebServices.swift */; };
+		C823D9AA27BBC243002A4CDC /* BookingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C823D9A927BBC243002A4CDC /* BookingsViewModel.swift */; };
+		C863BC3D27B78AFA002B18D0 /* saloonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C863BC3C27B78AFA002B18D0 /* saloonApp.swift */; };
+		C863BC3F27B78AFA002B18D0 /* SaloonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C863BC3E27B78AFA002B18D0 /* SaloonListView.swift */; };
+		C863BC4127B78AFB002B18D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C863BC4027B78AFB002B18D0 /* Assets.xcassets */; };
+		C863BC4427B78AFB002B18D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C863BC4327B78AFB002B18D0 /* Preview Assets.xcassets */; };
+		C863BC7427B84168002B18D0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C863BC7327B84168002B18D0 /* LoginView.swift */; };
+		C863BC7627B84177002B18D0 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C863BC7527B84177002B18D0 /* SignUpView.swift */; };
+		C863BC7827B8419B002B18D0 /* ForgotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C863BC7727B8419B002B18D0 /* ForgotView.swift */; };
+		C863BC7E27B84282002B18D0 /* BookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C863BC7D27B84282002B18D0 /* BookingView.swift */; };
+		C863BC8427B8441A002B18D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C863BC8327B8441A002B18D0 /* LaunchScreen.storyboard */; };
+		C8C83CF327B8CB1A00EF5E4E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C83CF227B8CB1A00EF5E4E /* Constants.swift */; };
+		C8C83CF727B8CCFD00EF5E4E /* AccountWebservices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C83CF627B8CCFD00EF5E4E /* AccountWebservices.swift */; };
+		C8C83CFA27B8E2B800EF5E4E /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C83CF927B8E2B800EF5E4E /* AccountModel.swift */; };
+		C8C83CFD27B8E37900EF5E4E /* AccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C83CFC27B8E37900EF5E4E /* AccountsViewModel.swift */; };
+		C8D7D45827BCF2AF003B70AB /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D7D45727BCF2AF003B70AB /* Alerts.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C823D99627B93EC1002A4CDC /* SaloonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaloonModel.swift; sourceTree = "<group>"; };
+		C823D99827B9415E002A4CDC /* SaloonWebservices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaloonWebservices.swift; sourceTree = "<group>"; };
+		C823D99A27B94173002A4CDC /* SaloonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaloonViewModel.swift; sourceTree = "<group>"; };
+		C823D99C27B950E5002A4CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C823D99D27B9523B002A4CDC /* URLimage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLimage.swift; sourceTree = "<group>"; };
+		C823D99F27B953C7002A4CDC /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		C823D9A127B97D20002A4CDC /* SaloonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaloonDetailView.swift; sourceTree = "<group>"; };
+		C823D9A527BBC006002A4CDC /* BookingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingModel.swift; sourceTree = "<group>"; };
+		C823D9A727BBC05C002A4CDC /* BookingWebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingWebServices.swift; sourceTree = "<group>"; };
+		C823D9A927BBC243002A4CDC /* BookingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsViewModel.swift; sourceTree = "<group>"; };
+		C863BC3927B78AFA002B18D0 /* saloon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = saloon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C863BC3C27B78AFA002B18D0 /* saloonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saloonApp.swift; sourceTree = "<group>"; };
+		C863BC3E27B78AFA002B18D0 /* SaloonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaloonListView.swift; sourceTree = "<group>"; };
+		C863BC4027B78AFB002B18D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C863BC4327B78AFB002B18D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C863BC7327B84168002B18D0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C863BC7527B84177002B18D0 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		C863BC7727B8419B002B18D0 /* ForgotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotView.swift; sourceTree = "<group>"; };
+		C863BC7D27B84282002B18D0 /* BookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingView.swift; sourceTree = "<group>"; };
+		C863BC8327B8441A002B18D0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C8C83CF227B8CB1A00EF5E4E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C8C83CF627B8CCFD00EF5E4E /* AccountWebservices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountWebservices.swift; sourceTree = "<group>"; };
+		C8C83CF927B8E2B800EF5E4E /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		C8C83CFC27B8E37900EF5E4E /* AccountsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewModel.swift; sourceTree = "<group>"; };
+		C8D7D45727BCF2AF003B70AB /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C863BC3627B78AFA002B18D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C863BC3027B78AFA002B18D0 = {
+			isa = PBXGroup;
+			children = (
+				C863BC3B27B78AFA002B18D0 /* saloon */,
+				C863BC3A27B78AFA002B18D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C863BC3A27B78AFA002B18D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C863BC3927B78AFA002B18D0 /* saloon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C863BC3B27B78AFA002B18D0 /* saloon */ = {
+			isa = PBXGroup;
+			children = (
+				C823D99C27B950E5002A4CDC /* Info.plist */,
+				C8C83CF427B8CB6400EF5E4E /* Utils */,
+				C8C83CF827B8E2A200EF5E4E /* Model */,
+				C8C83CF527B8CCE500EF5E4E /* Webservices */,
+				C8C83CFB27B8E35300EF5E4E /* ViewModel */,
+				C863BC7227B84150002B18D0 /* Accounts */,
+				C863BC7F27B842A8002B18D0 /* Main */,
+				C863BC8027B842D9002B18D0 /* Orders */,
+				C863BC4027B78AFB002B18D0 /* Assets.xcassets */,
+				C863BC3C27B78AFA002B18D0 /* saloonApp.swift */,
+				C863BC8327B8441A002B18D0 /* LaunchScreen.storyboard */,
+				C863BC4227B78AFB002B18D0 /* Preview Content */,
+			);
+			path = saloon;
+			sourceTree = "<group>";
+		};
+		C863BC4227B78AFB002B18D0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C863BC4327B78AFB002B18D0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C863BC7227B84150002B18D0 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				C863BC7327B84168002B18D0 /* LoginView.swift */,
+				C863BC7527B84177002B18D0 /* SignUpView.swift */,
+				C863BC7727B8419B002B18D0 /* ForgotView.swift */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		C863BC7F27B842A8002B18D0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C863BC3E27B78AFA002B18D0 /* SaloonListView.swift */,
+				C823D9A127B97D20002A4CDC /* SaloonDetailView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C863BC8027B842D9002B18D0 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				C863BC7D27B84282002B18D0 /* BookingView.swift */,
+			);
+			path = Orders;
+			sourceTree = "<group>";
+		};
+		C8C83CF427B8CB6400EF5E4E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C8C83CF227B8CB1A00EF5E4E /* Constants.swift */,
+				C823D99D27B9523B002A4CDC /* URLimage.swift */,
+				C823D99F27B953C7002A4CDC /* ImageLoader.swift */,
+				C8D7D45727BCF2AF003B70AB /* Alerts.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C8C83CF527B8CCE500EF5E4E /* Webservices */ = {
+			isa = PBXGroup;
+			children = (
+				C8C83CF627B8CCFD00EF5E4E /* AccountWebservices.swift */,
+				C823D99827B9415E002A4CDC /* SaloonWebservices.swift */,
+				C823D9A727BBC05C002A4CDC /* BookingWebServices.swift */,
+			);
+			path = Webservices;
+			sourceTree = "<group>";
+		};
+		C8C83CF827B8E2A200EF5E4E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C823D99627B93EC1002A4CDC /* SaloonModel.swift */,
+				C8C83CF927B8E2B800EF5E4E /* AccountModel.swift */,
+				C823D9A527BBC006002A4CDC /* BookingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C8C83CFB27B8E35300EF5E4E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C8C83CFC27B8E37900EF5E4E /* AccountsViewModel.swift */,
+				C823D99A27B94173002A4CDC /* SaloonViewModel.swift */,
+				C823D9A927BBC243002A4CDC /* BookingsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C863BC3827B78AFA002B18D0 /* saloon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C863BC4727B78AFB002B18D0 /* Build configuration list for PBXNativeTarget "saloon" */;
+			buildPhases = (
+				C863BC3527B78AFA002B18D0 /* Sources */,
+				C863BC3627B78AFA002B18D0 /* Frameworks */,
+				C863BC3727B78AFA002B18D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = saloon;
+			productName = saloon;
+			productReference = C863BC3927B78AFA002B18D0 /* saloon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C863BC3127B78AFA002B18D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					C863BC3827B78AFA002B18D0 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = C863BC3427B78AFA002B18D0 /* Build configuration list for PBXProject "saloon" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C863BC3027B78AFA002B18D0;
+			productRefGroup = C863BC3A27B78AFA002B18D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C863BC3827B78AFA002B18D0 /* saloon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C863BC3727B78AFA002B18D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C863BC8427B8441A002B18D0 /* LaunchScreen.storyboard in Resources */,
+				C863BC4427B78AFB002B18D0 /* Preview Assets.xcassets in Resources */,
+				C863BC4127B78AFB002B18D0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C863BC3527B78AFA002B18D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C863BC7E27B84282002B18D0 /* BookingView.swift in Sources */,
+				C823D9A627BBC006002A4CDC /* BookingModel.swift in Sources */,
+				C823D99E27B9523B002A4CDC /* URLimage.swift in Sources */,
+				C863BC7627B84177002B18D0 /* SignUpView.swift in Sources */,
+				C8C83CFA27B8E2B800EF5E4E /* AccountModel.swift in Sources */,
+				C863BC7427B84168002B18D0 /* LoginView.swift in Sources */,
+				C8D7D45827BCF2AF003B70AB /* Alerts.swift in Sources */,
+				C8C83CFD27B8E37900EF5E4E /* AccountsViewModel.swift in Sources */,
+				C823D9AA27BBC243002A4CDC /* BookingsViewModel.swift in Sources */,
+				C8C83CF727B8CCFD00EF5E4E /* AccountWebservices.swift in Sources */,
+				C863BC3F27B78AFA002B18D0 /* SaloonListView.swift in Sources */,
+				C823D9A227B97D20002A4CDC /* SaloonDetailView.swift in Sources */,
+				C823D99B27B94173002A4CDC /* SaloonViewModel.swift in Sources */,
+				C8C83CF327B8CB1A00EF5E4E /* Constants.swift in Sources */,
+				C863BC7827B8419B002B18D0 /* ForgotView.swift in Sources */,
+				C823D99927B9415E002A4CDC /* SaloonWebservices.swift in Sources */,
+				C823D9A827BBC05C002A4CDC /* BookingWebServices.swift in Sources */,
+				C823D99727B93EC1002A4CDC /* SaloonModel.swift in Sources */,
+				C823D9A027B953C7002A4CDC /* ImageLoader.swift in Sources */,
+				C863BC3D27B78AFA002B18D0 /* saloonApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C863BC4527B78AFB002B18D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C863BC4627B78AFB002B18D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C863BC4827B78AFB002B18D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"saloon/Preview Content\"";
+				DEVELOPMENT_TEAM = 8T29484Z9B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = saloon/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atharvparkhe.saloon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C863BC4927B78AFB002B18D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"saloon/Preview Content\"";
+				DEVELOPMENT_TEAM = 8T29484Z9B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = saloon/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atharvparkhe.saloon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C863BC3427B78AFA002B18D0 /* Build configuration list for PBXProject "saloon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C863BC4527B78AFB002B18D0 /* Debug */,
+				C863BC4627B78AFB002B18D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C863BC4727B78AFB002B18D0 /* Build configuration list for PBXNativeTarget "saloon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C863BC4827B78AFB002B18D0 /* Debug */,
+				C863BC4927B78AFB002B18D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C863BC3127B78AFA002B18D0 /* Project object */;
+}
